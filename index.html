@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alma Estética Avançada</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar__container">
+      <div class="topbar__contact">
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+        <a href="#">WhatsApp</a>
+      </div>
+      <div class="topbar__social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <button class="header__hamburger" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="header__logo">
+        <span class="logo-title">ALMA</span>
+        <span class="logo-subtitle">Estética Avançada</span>
+      </div>
+
+      <nav class="header__nav" id="main-nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#equipe">Nossa Equipe</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contato" class="btn btn--outline header__cta">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1>Unindo tecnologia e ciência a serviço da <span class="highlight">sua beleza</span>.</h1>
+          <p>Protocolos exclusivos com equipamentos consagrados de alta tecnologia e profissionais capacitados, entregando resultados excelentes em tratamentos corporais e faciais.</p>
+          <a href="#agendar" class="btn btn--primary">
+            Agendar Consulta
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero__image-wrapper">
+          <div class="hero__blob"></div>
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/hero-mobile-1x1.jpg">
+            <img src="assets/hero-desktop-16x9.jpg" alt="Profissional da Clínica Alma" class="hero__image">
+          </picture>
+        </div>
+      </div>
+      <!-- SVG Curve transition -->
+      <div class="curve-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,0 C480,120 960,120 1440,0 L1440,120 L0,120 Z" fill="var(--color-white)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Serviços (4 Cards) -->
+    <section class="services">
+      <div class="container">
+        <div class="services__grid">
+          <!-- Card 1 -->
+          <div class="service-card scroll-reveal">
+            <img src="assets/service-harmonizacao-facial.jpg" alt="Harmonização Facial" class="service-card__icon">
+            <h3>Harmonização Facial</h3>
+            <p>Um conjunto de procedimentos estéticos para equilibrar e realçar os traços faciais.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card scroll-reveal">
+            <img src="assets/service-tratamentos-faciais.jpg" alt="Tratamentos Faciais" class="service-card__icon">
+            <h3>Tratamentos Faciais</h3>
+            <p>Abordagens estéticas visando proporções equilibradas e contornos harmoniosos no corpo.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card scroll-reveal">
+            <img src="assets/service-harmonizacao-corporal.jpg" alt="Harmonização Corporal" class="service-card__icon" onerror="this.src='assets/hero-mobile-1x1.jpg'">
+            <h3>Harmonização Corporal</h3>
+            <p>Tecnologia que utiliza ultrassom para estimular colágeno e melhorar a firmeza da pele.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="service-card scroll-reveal">
+            <img src="assets/service-depilacao-laser.jpg" alt="Depilação a Laser" class="service-card__icon" onerror="this.src='assets/hero-mobile-1x1.jpg'">
+            <h3>Depilação a Laser</h3>
+            <p>Utilizando tecnologia avançada, oferecemos uma solução duradoura para a remoção de pelos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sem Corte e Sem Cirurgia (Carrossel) -->
+    <section class="before-after bg-cream">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <h2>Sem corte e sem cirurgia.</h2>
+          <p>Confira alguns resultados da clínica Alma Estética Avançada.</p>
+        </div>
+
+        <div class="carousel-wrapper scroll-reveal">
+          <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          
+          <div class="carousel" id="carousel">
+            <div class="carousel__track">
+              <div class="carousel__slide carousel-card">
+                <img src="assets/before-after-harmonizacao.jpg" alt="Harmonização Facial">
+                <div class="carousel-card-label">Harmonização Facial</div>
+              </div>
+              <div class="carousel__slide carousel-card">
+                <img src="assets/before-after-labial.jpg" alt="Preenchimento Labial">
+                <div class="carousel-card-label">Preenchimento Labial</div>
+              </div>
+              <div class="carousel__slide carousel-card">
+                <img src="assets/before-after-olheiras.jpg" alt="Redução de Olheiras">
+                <div class="carousel-card-label">Redução de Olheiras</div>
+              </div>
+              <div class="carousel__slide carousel-card">
+                <img src="assets/before-after-mandibula.jpg" alt="Definição de Mandíbula">
+                <div class="carousel-card-label">Definição de Mandíbula</div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" aria-label="Próximo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="carousel__dots"></div>
+      </div>
+      
+      <!-- Reverse curve -->
+      <div class="curve-divider bottom">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,120 C480,0 960,0 1440,120 L1440,0 L0,0 Z" fill="var(--color-bg-cream)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Especialidades (Tabs) -->
+    <section id="especialidades" class="specialties">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <h2>Especialidades</h2>
+          <p>Cuidados Personalizados para Sua Beleza</p>
+        </div>
+
+        <div class="tabs-container scroll-reveal">
+          <div class="tabs__nav">
+            <button class="tabs__btn active" data-target="harmonizacao">Harmonização Facial</button>
+            <button class="tabs__btn" data-target="facial">Tratamento Facial</button>
+            <button class="tabs__btn" data-target="corporal">Tratamento Corporal</button>
+          </div>
+
+          <div class="tabs__content">
+            <!-- Tab Harmonização -->
+            <div class="tabs__pane active" id="harmonizacao">
+              <div class="specialties__grid">
+                <!-- Card 1 -->
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/avatar-bioremodelacao.jpg" onerror="this.src='assets/hero-mobile-1x1.jpg'" alt="Rinomodelação" class="specialty-card__avatar">
+                  </div>
+                  <h3>Rinomodelação</h3>
+                  <p>A rinomodelação é um procedimento estético que utiliza ácido hialurônico para ajustar a forma do nariz temporariamente, sem cirurgia.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/avatar-preenchimento-olheira.jpg" onerror="this.src='assets/hero-mobile-1x1.jpg'" alt="Preenchimento de Olheira" class="specialty-card__avatar">
+                  </div>
+                  <h3>Preenchimento de Olheira</h3>
+                  <p>O preenchimento de olheiras é um procedimento estético que utiliza ácido hialurônico para reduzir bolsas e olheiras sob os olhos, melhorando a aparência.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/avatar-preenchimento-mento.jpg" onerror="this.src='assets/hero-mobile-1x1.jpg'" alt="Preenchimento do Mento" class="specialty-card__avatar">
+                  </div>
+                  <h3>Preenchimento do Mento</h3>
+                  <p>O preenchimento do mento é um procedimento estético que utiliza ácido hialurônico na área do queixo (mento) para melhorar sua forma e projeção.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/avatar-toxina-botulinica.jpg" onerror="this.src='assets/hero-mobile-1x1.jpg'" alt="Toxina Botulínica" class="specialty-card__avatar">
+                  </div>
+                  <h3>Toxina Botulínica</h3>
+                  <p>A toxina botulínica, conhecida por Botox, é uma substância utilizada em procedimentos estéticos e médicos para relaxar temporariamente as rugas e linhas de expressão.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/avatar-preenchimento-mandibula.jpg" onerror="this.src='assets/hero-mobile-1x1.jpg'" alt="Preenchimento da Mandíbula" class="specialty-card__avatar">
+                  </div>
+                  <h3>Preenchimento da Mandíbula</h3>
+                  <p>O preenchimento da mandíbula é um procedimento estético que utiliza ácido hialurônico para criar definição, contorno e harmonia no rosto.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+                <!-- Card 6 -->
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/avatar-preenchimento-labial.jpg" onerror="this.src='assets/hero-mobile-1x1.jpg'" alt="Preenchimento Labial" class="specialty-card__avatar">
+                  </div>
+                  <h3>Preenchimento Labial</h3>
+                  <p>O preenchimento labial é um procedimento estético que utiliza ácido hialurônico, é injetado nos lábios para aumentar o volume, melhorar o contorno e suavizar rugas ou linhas ao redor da boca.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Facial (Placeholder) -->
+            <div class="tabs__pane" id="facial">
+              <div class="specialties__grid">
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/hero-mobile-1x1.jpg" alt="Tratamento Facial" class="specialty-card__avatar">
+                  </div>
+                  <h3>Limpeza de Pele</h3>
+                  <p>Procedimento para remoção de impurezas e desobstrução dos poros para uma pele renovada.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Corporal (Placeholder) -->
+            <div class="tabs__pane" id="corporal">
+               <div class="specialties__grid">
+                <div class="specialty-card">
+                  <div class="specialty-card__avatar-wrap">
+                    <img src="assets/hero-mobile-1x1.jpg" alt="Tratamento Corporal" class="specialty-card__avatar">
+                  </div>
+                  <h3>Drenagem Linfática</h3>
+                  <p>Técnica de massagem que estimula o sistema linfático, reduzindo retenção de líquidos.</p>
+                  <a href="#" class="link-more">Saiba Mais &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+      <div class="container cta-final__container scroll-reveal">
+        <h2>Pronta para realçar sua melhor versão?</h2>
+        <a href="#agendar" class="btn btn--inverted">Agendar Consulta</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo-title">ALMA</span>
+          <span class="logo-subtitle">Estética Avançada</span>
+        </div>
+        <p>Unindo tecnologia, ciência e um atendimento humanizado para evidenciar a sua beleza natural.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      
+      <div class="footer__links">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#equipe">Nossa Equipe</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <p>(11) 99999-9999</p>
+        <p>contato@almaestetica.com.br</p>
+        <p>Av. Exemplo, 1234 - Sala 56<br>São Paulo, SP</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Alma Estética Avançada. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
